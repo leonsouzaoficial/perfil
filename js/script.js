@@ -27,3 +27,8 @@ function menuPrincipal () {
         menu_principal.style.display = "none"
     }
 }
+
+// função que ativa quando a tela é carregada ou redimensionada
+function iniciar () {
+    mostrarMenu()
+}
