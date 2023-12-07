@@ -5,26 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Leon Souza</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/desktop_e_tablets.css" media="screen">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
+<body onresize="mostrarMenu()" onload="mostrarMenu()">
     <header>
-        <section>
+        <section id="section_perfil">
             <img id="foto_de_perfil" src="imagens/foto-de-perfil.jpg" alt="Foto de perfil">
             <h1 id="título_de_perfil">Leon Souza Silva</h1>
         </section>
-        <nav id="nav_menu">
+        <section id="section_menu">
             <span onclick="menuPrincipal()" id="bt_menu" class="material-symbols-outlined">menu</span>
-            <a id="menu_início" href="index.html">Início</a>
-            <a id="menu_carreira" href="#">Carreira</a>
-            <a id="menu_currículo" href="#">Currículo</a>
-            <a id="menu_redes_sociais" href="#">Redes Sociais</a>
-            <a id="menu_contato" href="#">Contato</a>
-        </nav>
+        </section>
+        <menu id="menu_principal">
+            <a href="index.html">Início</a>
+            <a href="#">Carreira</a>
+            <a href="#">Currículo</a>
+            <a href="#">Redes Sociais</a>
+            <a href="#">Contato</a>
+        </menu>
     </header>
     <main>
-
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia magnam enim ex aliquid similique corrupti voluptas necessitatibus labore velit nulla quia voluptatum pariatur cum delectus dolorem quas, magni, dolor sit.</p>
     </main>
     <footer>
 

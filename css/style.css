@@ -9,10 +9,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+header > section#section_perfil{
     background-image: linear-gradient(to bottom, #0077ff, #035abe, #02428b);
     color: white;
-    padding: 10px;
+    padding: 10px 0px 0px 10px;
 }
 
 header > section > img#foto_de_perfil {
@@ -29,28 +29,44 @@ header > section > h1 {
     font-size: 2em;
 }
 
-nav {
-    margin-top: 10px;
+section#section_menu {
+    background-color: #02428b;
 }
 
-nav > span#bt_menu {
+section#section_menu > span#bt_menu {
     cursor: pointer;
+    color: white;
     font-size: 1.5em;
     padding: 5px;
 }
 
-nav > span#bt_menu:hover {
+section#section_menu > span#bt_menu:hover {
     background-color: white;
     color: black;
 }
 
-nav > a {
+menu {
+    display: none;
+    width: 150px;
+    background-color: #023168;
+    position: absolute;
+}
+
+menu > a {
+    display: block;
     color: white;
     text-decoration: none;
     padding: 10px;
     font-size: 1.1em;
 }
 
-nav > a:hover {
-    background-color: #03356e;
+menu > a:hover {
+    background-color: #021c3a;
+}
+
+main {
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
 }

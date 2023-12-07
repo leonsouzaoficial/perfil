@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) {
+    section#section_menu {
+        display: none;
+    }
+
+    menu {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    menu > a {
+        display: inline;
+    }
+
+    main {
+        margin-top: 50px;
+        max-width: 600px;
+    }
+}
