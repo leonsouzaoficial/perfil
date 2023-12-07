@@ -45,6 +45,11 @@ section#section_menu > span#bt_menu:hover {
     color: black;
 }
 
+section#section_menu > span#bt_menu:active {
+    background-color: unset;
+    color: white;
+}
+
 menu {
     display: none;
     width: 150px;
@@ -62,6 +67,10 @@ menu > a {
 
 menu > a:hover {
     background-color: #021c3a;
+}
+
+menu > a:active {
+
 }
 
 main {
