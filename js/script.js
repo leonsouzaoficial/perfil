@@ -75,7 +75,7 @@ function posicionaFooter () {
 
 // função que ativa quando a tela é carregada ou redimensionada
 function iniciar () {
-    posicionaFooter()
     mostrarMenu()
     posicionaMain()
+    posicionaFooter()
 }
