@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (min-height: 500px){
+
     section#section_menu {
         display: none;
     }
