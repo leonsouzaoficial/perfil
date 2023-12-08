@@ -28,7 +28,27 @@ function menuPrincipal () {
     }
 }
 
+// posiciona o main no centro
+function posicionaMain () {
+    let body = document.getElementById("body")
+    let header = document.getElementById("header")
+    let main = document.getElementById("main")
+
+    let espaço_disponível = body.clientHeight - header.clientHeight
+
+    let top = parseInt((espaço_disponível-main.clientHeight)/2)
+
+    if (espaço_disponível > main.clientHeight) {
+        main.style.marginTop = top + "px"
+    }
+
+    else {
+        main.style.marginTop = "20px"
+    }
+}
+
 // função que ativa quando a tela é carregada ou redimensionada
 function iniciar () {
     mostrarMenu()
+    posicionaMain()
 }
