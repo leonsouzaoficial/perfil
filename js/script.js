@@ -1,3 +1,9 @@
+// objetos
+let body = document.getElementById("body")
+let header = document.getElementById("header")
+let main = document.getElementById("main")
+let footer = document.getElementById("footer")
+
 // centraliza o título na vertical
 let título = document.getElementById("título_de_perfil")
 let foto_de_perfil = document.getElementById("foto_de_perfil")
@@ -30,16 +36,18 @@ function menuPrincipal () {
 
 // posiciona o main no centro
 function posicionaMain () {
-    let body = document.getElementById("body")
-    let header = document.getElementById("header")
-    let main = document.getElementById("main")
-
-    let espaço_disponível = body.clientHeight - header.clientHeight
-
-    let top = parseInt((espaço_disponível-main.clientHeight)/2)
+    let espaço_disponível = body.clientHeight - header.clientHeight - footer.clientHeight
 
     if (espaço_disponível > main.clientHeight) {
-        main.style.marginTop = top + "px"
+        let top = parseInt((espaço_disponível-main.clientHeight)/2)
+
+        if (menu_principal.style.display == "none") {
+            main.style.marginTop = top + "px"
+        }
+
+        else {
+            main.style.marginTop = top + menu_principal.clientHeight + "px"
+        }
     }
 
     else {
@@ -47,8 +55,27 @@ function posicionaMain () {
     }
 }
 
+// posiciona o footer
+function posicionaFooter () {
+    if (body.clientHeight > window.innerHeight) {
+        body.style.height = ""
+        body.style.width = ""
+        footer.style.width = "calc(100% - 20px)"
+    }
+
+    else {
+        body.style.width = "100vw"
+        body.style.height = "100vh"
+        footer.style.position = "absolute"
+        footer.style.width = "calc(100% - 20px)"
+
+        footer.style.top = body.clientHeight - footer.clientHeight - 20 + "px"
+    }
+}
+
 // função que ativa quando a tela é carregada ou redimensionada
 function iniciar () {
+    posicionaFooter()
     mostrarMenu()
     posicionaMain()
 }
