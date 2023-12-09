@@ -34,10 +34,14 @@ menu {
 menu > img {
     cursor: pointer;
     padding: 5px;
+    background-image: url("../imagens/icone-menu-branco.png");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 menu > img:hover {
-    background-color: white;
+    background-color: #023270;
+    background-image: url("../imagens/icone-menu.png");
 }
 
 menu > ul > li > a {
@@ -47,7 +51,12 @@ menu > ul > li > a {
     display: block;
 }
 
-menu > ul > li > a:hover {
+menu > ul > li > a.menu_selecionado {
     background-color: #034397;
+}
+
+menu > ul > li > a:hover {
+    background-color: #023270;
     text-decoration: underline;
 }
+
