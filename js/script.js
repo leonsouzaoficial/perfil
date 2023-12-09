@@ -34,48 +34,19 @@ function menuPrincipal () {
     }
 }
 
-// posiciona o main no centro
-function posicionaMain () {
-    let espaço_disponível = body.clientHeight - header.clientHeight - footer.clientHeight
+// função do main
+function tamanhoMain () {
+    let espaço_disponível = window.innerHeight - (header.clientHeight + footer.clientHeight)
 
-    if (espaço_disponível > main.clientHeight) {
-        let top = parseInt((espaço_disponível-main.clientHeight)/2)
+    main.style.minHeight = espaço_disponível - 20 + "px"
 
-        if (menu_principal.style.display == "none") {
-            main.style.marginTop = top + "px"
-        }
-
-        else {
-            main.style.marginTop = top + menu_principal.clientHeight + "px"
-        }
-    }
-
-    else {
-        main.style.marginTop = "20px"
-    }
-}
-
-// posiciona o footer
-function posicionaFooter () {
-    if (body.clientHeight > window.innerHeight) {
-        body.style.height = ""
-        body.style.width = ""
-        footer.style.width = "calc(100% - 20px)"
-    }
-
-    else {
-        body.style.width = "100vw"
-        body.style.height = "100vh"
-        footer.style.position = "absolute"
-        footer.style.width = "calc(100% - 20px)"
-
-        footer.style.top = body.clientHeight - footer.clientHeight - 20 + "px"
-    }
+    // posiciona no meio
+    let conteúdo = document.getElementById("conteúdo")
+    conteúdo.style.marginTop = (main.clientHeight - conteúdo.clientHeight) / 2 + "px"
 }
 
 // função que ativa quando a tela é carregada ou redimensionada
 function iniciar () {
     mostrarMenu()
-    posicionaMain()
-    posicionaFooter()
+    tamanhoMain()
 }
