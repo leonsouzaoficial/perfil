@@ -90,6 +90,8 @@ section#conteúdo {
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px;
+    width: 90%;
+    margin: auto;
 }
 
 section#conteúdo > h1 {
