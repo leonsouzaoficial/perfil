@@ -4,6 +4,10 @@ table {
     width: 100%;
 }
 
+table th {
+    width: 33%;
+}
+
 table h2 {
     font-size: 1.3em;
 }
