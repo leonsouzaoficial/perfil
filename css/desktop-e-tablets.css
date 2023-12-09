@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) {
+    menu > ul {
+        padding: 10px 0px 10px 0px;
+    }
+    menu > ul > li {
+        display: inline;
+    }
+
+    menu > ul > li > a {
+        display: inline;
+    }
+}

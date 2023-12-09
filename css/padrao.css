@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #006eff;
+    color: white;
+}
+
+header > img#foto_de_perfil {
+    width: 100px;
+    margin: 10px 0px 0px 10px;
+    border: 2px solid rgba(255, 255, 255, 0.459);
+    border-radius: 50%;
+}
+
+header > h1 {
+    position: absolute;
+}
+
+menu {
+    background-color: #035bce;
+}
+
+menu > img {
+    cursor: pointer;
+    padding: 5px;
+}
+
+menu > img:hover {
+    background-color: white;
+}
+
+menu > ul > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+menu > ul > li > a:hover {
+    background-color: #034397;
+    text-decoration: underline;
+}
