@@ -1,6 +1,18 @@
 @charset "UTF-8";
 
-#img img {
+table {
+    width: 100%;
+}
+
+table h2 {
+    font-size: 1.3em;
+}
+
+span {
+    font-size: 1em;
+}
+
+table img {
     width: 100px;
 }
 
