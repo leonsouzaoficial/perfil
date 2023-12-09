@@ -14,7 +14,7 @@ título.style.marginTop = (foto_de_perfil.clientHeight-título.clientHeight)/2+"
 let menu_principal = document.getElementById("menu_principal")
 
 function mostrarMenu () {
-    if (window.innerWidth >= 600) {
+    if (window.innerWidth >= 600 && window.innerHeight >= 500) {
         menu_principal.style.display = "block"
     }
 
