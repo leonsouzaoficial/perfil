@@ -12,6 +12,9 @@ let menu = document.getElementById("menu")
 bt_menu.addEventListener("mouseover", mudarImagemMenu())
 
 function funçãoMenu () {
+    // muda a cor do fundo para padrão
+    menu.style.backgroundColor = "#035bce"
+
     if (menu.style.display == "block") {
         menu.style.display = "none"
     }

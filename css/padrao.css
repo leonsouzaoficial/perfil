@@ -110,18 +110,18 @@ table.célula a:hover {
 }
 
 table.célula th.cel_lateral {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 table.célula th.cel_lateral img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 table.célula th.cel_central {
-    width: calc(100% - 200px);
-    height: 100px;
+    width: calc(100% - 160px);
+    height: 80px;
 }
 
 table.célula th.cel_central h2 {
