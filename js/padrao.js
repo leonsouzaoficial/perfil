@@ -42,7 +42,7 @@ function tamanhoMain () {
 }
 
 function roda () {
-    //tamanhoMain()
+    tamanhoMain()
     olharBtMenu()
     
     window.requestAnimationFrame(roda)
