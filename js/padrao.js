@@ -32,7 +32,17 @@ function olharBtMenu () {
     }
 }
 
+// main
+function tamanhoMain () {
+    let main = document.getElementById("main")
+    let header = document.getElementById("header")
+    let footer = document.getElementById("footer")
+
+    main.style.minHeight = window.innerHeight - header.clientHeight - footer.clientHeight - 20 + "px"
+}
+
 function roda () {
+    tamanhoMain()
     olharBtMenu()
     
     window.requestAnimationFrame(roda)

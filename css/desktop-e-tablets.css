@@ -11,4 +11,8 @@
     menu > ul > li > a {
         display: inline;
     }
+
+    main > section#conteúdo {
+        width: 600px;
+    }
 }
