@@ -25,6 +25,7 @@ header > img#foto_de_perfil {
 header > h1 {
     position: absolute;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.432);
+    font-variant: small-caps;
 }
 
 menu {
@@ -78,6 +79,7 @@ main > section#conteúdo > h1 {
 main > section#conteúdo > p {
     text-indent: 30px;
     line-height: 1.5em;
+    padding-bottom: 10px;
 }
 
 footer {
@@ -85,4 +87,43 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+/* */
+table.célula {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0px;
+    background-color: rgb(216, 206, 206);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.438);
+}
+
+table.célula a {
+    text-decoration: none;
+    color: blue;
+}
+
+table.célula a:hover {
+    text-decoration: underline;
+}
+
+table.célula th.cel_lateral {
+    width: 100px;
+    height: 100px;
+}
+
+table.célula th.cel_lateral img {
+    width: 100px;
+    height: 100px;
+}
+
+table.célula th.cel_central {
+    width: calc(100% - 200px);
+    height: 100px;
+}
+
+table.célula th.cel_central h2 {
+    font-variant: small-caps;
 }
