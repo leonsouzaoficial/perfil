@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+section#currículo {
+    background-color: rgb(216, 206, 206);
+    padding: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.384);
+    border-radius: 10px;
+}
+
+section#currículo > section#cabeçalho {
+
+}
+
+section#currículo > section#cabeçalho > img {
+    width: 150px;
+    border: 2px solid rgba(255, 255, 255, 0.342);
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
+}
+
+section#currículo > section#cabeçalho > div#título {
+    border: 1px solid black;
+    position: absolute;
+}
+
+section#currículo > section#cabeçalho > div#contato {
+    border: 1px solid black;
+}

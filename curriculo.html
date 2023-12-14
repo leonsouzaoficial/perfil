@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/desktop-e-tablets.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Leon Souza</title>
+    <link rel="stylesheet" href="css/curriculo.css">
 </head>
 <body onload="início()" onresize="início()">
     <header id="header">
@@ -16,7 +17,7 @@
             <img onclick="funçãoMenu()" id="bt_menu" src="imagens/nenhum.png">
             <ul id="menu">
                 <li><a href="index.html">Início</a></li>
-                <li><a class="menu_selecionado" href="carreira.html">Carreira</a></li>
+                <li><a class="menu_selecionado" href="curriculo.html">Currículo</a></li>
                 <li><a href="portifolio.html">Portifólio</a></li>
                 <li><a href="redes-sociais.html">Redes Sociais</a></li>
                 <li><a href="contato.html">Contato</a></li>
@@ -25,7 +26,19 @@
     </header>
     <main id="main">
         <section id="conteúdo">
-            <h1>Minha Carreira</h1>
+            <h1>Meu Currículo</h1>
+            <section id="currículo">
+                <section id="cabeçalho">
+                    <img id="foto_de_perfil" src="imagens/foto-de-perfil-curriculo.jpg" alt="Foto de perfil do currículo">
+                    <div id="título">
+                        <h1>Leandro Souza Silva</h1>
+                        <p>Desenvolvedor web</p>
+                    </div>
+                    <div id="contato">
+                        <h1>Contato</h1>
+                    </div>
+                </section>
+            </section>
         </section>
     </main>
     <footer id="footer">
@@ -33,5 +46,6 @@
     </footer>
 
     <script src="js/padrao.js"></script>
+    <script src="js/contato.js"></script>
 </body>
 </html>

@@ -95,7 +95,6 @@ table.célula {
     height: 100px;
     margin: 10px 0px;
     background-color: rgb(216, 206, 206);
-    padding: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.438);
 }
@@ -115,14 +114,15 @@ table.célula th.cel_lateral {
 }
 
 table.célula th.cel_lateral img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-size: cover;
 }
 
 table.célula th.cel_central {
-    width: calc(100% - 160px);
-    height: 80px;
+    width: calc(100% - 60px);
+    height: 60px;
+    font-size: 0.9em;
 }
 
 table.célula th.cel_central h2 {
