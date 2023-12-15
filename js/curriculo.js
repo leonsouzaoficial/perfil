@@ -5,7 +5,7 @@ let div_título = document.querySelector("div#título")
 
 // posiciona o título
 function posicionarTítulo () {
-    div_título.style.marginTop = "-150px"
+    div_título.style.marginTop = "-100px"
     div_título.style.marginLeft = "165px"
     div_título.style.width = (div_currículo.clientWidth - img_foto_do_perfil.clientWidth - 40) + "px"
 }

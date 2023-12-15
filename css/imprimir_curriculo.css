@@ -25,4 +25,12 @@
     footer {
         display: none;
     }
+
+    #txt_mais {
+        display: block;
+    }
+
+    #link {
+        display: block;
+    }
 }
