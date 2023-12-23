@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+div.lista {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+div.célula {
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px 5px 0px 5px;
+    background-color: rgb(44, 196, 44);
+    width: 200px;
+    height: 240px;
+    border: 1px solid rgb(151, 149, 149);
+}
+
+div.célula:hover {
+    background-color: green;
+}
+
+div.célula > a > p {
+    position: absolute;
+    margin: 5px 0px;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 0px;
+    width: calc(200px - 20px);
+    padding: 10px;
+    font-size: 1em;
+    font-variant: small-caps;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+div.célula > a > img {
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (min-width: 800px) {
+    div.lista {
+        width: 800px;
+        margin-left: calc((100% - 800px)/2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    div.lista {
+        width: 1200px;
+        margin-left: calc((100% - 1200px)/2);
+    }
+}
